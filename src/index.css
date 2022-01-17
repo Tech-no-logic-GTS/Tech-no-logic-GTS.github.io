@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+::-webkit-scrollbar {
+    width: 0.75rem;
+    cursor: default;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--surface-c);
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 0.5rem;
+    border-radius: 3rem;
+    border: 2.5px solid var(--surface-e);
+    cursor: grab;
+    background-clip: content-box;
+    background: linear-gradient(180deg, rgba(44, 104, 196, 1) 0%, #171941 100%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #171941;
+    font-family: var(--font-family);
+    font-weight: normal;
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.blur {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    /* border: 1px solid rgba(255, 255, 255, 0.125); */
+}
+
+.border-change {
+    border-radius: 1.5rem !important;
+}
+
+.width-full {
+    width: -webkit-fill-available !important;
+}
+
+.shine-text {
+    font-family: monospace;
+    color: transparent;
+    background-image: linear-gradient(
+        90deg,
+        rgb(255, 255, 255) 70.67%,
+        rgba(117, 122, 140, 0) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.shine-border {
+    border: 0.1rem solid rgba(42, 100, 175, 0.3) !important;
+}
+
+.p-card.p-component.navbar {
+    padding: 0;
+    border: 0.625rem solid rgba(226, 232, 240, 0.3);
+    font-family: "Montserrat", sans-serif !important;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.p-card-body,
+.p-card-content {
+    padding: 0 !important;
+}
+
+.square {
+    background: linear-gradient(0deg, #3358f4, #1d8cf8);
+    border-radius: 20%;
+}
+
+.bg-blob {
+    position: absolute;
+    max-width: 100%;
+    right: -20rem;
+    opacity: 0.1;
+}
+
+.grain {
+    opacity: 0.1;
+    z-index: 7;
+    background-color: #00441f;
+    background-image: url(./assets/lightgrain.gif);
+}
+
+.grain-overlay {
+    z-index: 6;
+    background-color: #20232d;
+}
+
+.terminal-text {
+    font-family: monospace;
+    text-shadow: 0 0 1ex #33ff33, 0 0 2px rgb(255 255 255 / 80%);
+    color: rgba(128, 255, 128, 0.8);
+    z-index: 10 !important;
+}
+
+.term::after {
+    content: "|";
+    animation: typedjsBlink 0.7s infinite;
+}
