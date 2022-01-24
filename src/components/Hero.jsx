@@ -68,7 +68,7 @@ const Hero = () => {
                 />
                 <motion.span
                     className="square absolute w-23rem h-23rem opacity-10"
-                    style={{ bottom: "0%", right: "-5%" }}
+                    style={{ bottom: "-7%", right: "-5%" }}
                     animate={animateProps}
                     transition={animationProps()}
                 />

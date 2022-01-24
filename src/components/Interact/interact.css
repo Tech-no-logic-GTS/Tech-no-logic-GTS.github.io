@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+
+/* #Interact-Page {
+    --hero-gradient-1: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+} */
+.hero-gradient-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 9rem;
+    letter-spacing: -0.2rem;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 480px) {
+    .hero-gradient-text {
+        font-size: 24vw;
+    }
+}
+
+.font-mono {
+    font-family: monospace;
+}
+
+.blood-drop::before {
+    content: "🩸";
+}

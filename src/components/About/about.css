@@ -1,0 +1,12 @@
+.p-avatar.p-component.p-avatar-xl {
+    width: 15rem !important;
+    height: 15rem !important;
+}
+
+.hero-heading {
+    font-size: 8rem;
+}
+
+.hero {
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vh)); */
+}
