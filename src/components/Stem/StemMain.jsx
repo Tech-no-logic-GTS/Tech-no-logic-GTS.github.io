@@ -162,7 +162,7 @@ const StemMain = () => {
                                 src={stem_img1}
                                 className={`h-full w-30rem border-change mt-1 ${
                                     size.width >= 730 && "img-shift"
-                                }`}
+                                } ${size.width < 520 && "w-25rem"}`}
                                 alt="Stem 3D Print"
                             />
                         </div>
@@ -188,40 +188,49 @@ const StemMain = () => {
                 </div>
             </div>
             <img src={blob_2_SVG} alt="blob" className="bg-blob-2" />
-            <div
-                className={`w-screen text-white text-center ${
-                    size.width > 520 ? "text-8xl" : "text-7xl"
-                } font-inter mb-5 `}
-                style={{ fontWeight: 800 }}
-            >
-                Try{" "}
-                <span className="underline" style={{ color: "#ed7a7f" }}>
-                    Looking
-                </span>{" "}
-                Around
-            </div>
-            <div
-                className={`relative ${
-                    size.width > 520 ? "mx-6" : "mx-3"
-                } mb-6 border-change border-blue-500 surface-overlay font-bold flex align-items-center justify-content-center`}
-                style={{
-                    height: "80vh",
-                    borderWidth: "0.4rem",
-                    borderStyle: "solid",
-                }}
-            >
-                <React.Suspense
-                    fallback={<span className="text-5xl">Loading...</span>}
-                >
-                    <StemF1Car />
-                </React.Suspense>
-                <img
-                    className="absolute w-5rem bottom-0 right-0 m-3"
-                    style={{ borderRadius: "1rem" }}
-                    src={move}
-                    alt="UserUI"
-                />
-            </div>
+            {size.width >= 520 && (
+                <>
+                    <div
+                        className={`w-screen text-white text-center ${
+                            size.width > 520 ? "text-8xl" : "text-7xl"
+                        } font-inter mb-5 `}
+                        style={{ fontWeight: 800 }}
+                    >
+                        Try{" "}
+                        <span
+                            className="underline"
+                            style={{ color: "#ed7a7f" }}
+                        >
+                            Looking
+                        </span>{" "}
+                        Around
+                    </div>
+                    <div
+                        className={`relative ${
+                            size.width > 520 ? "mx-6" : "mx-3"
+                        } mb-6 border-change border-blue-500 surface-overlay font-bold flex align-items-center justify-content-center`}
+                        style={{
+                            height: "80vh",
+                            borderWidth: "0.4rem",
+                            borderStyle: "solid",
+                        }}
+                    >
+                        <React.Suspense
+                            fallback={
+                                <span className="text-5xl">Loading...</span>
+                            }
+                        >
+                            <StemF1Car />
+                        </React.Suspense>
+                        <img
+                            className="absolute w-5rem bottom-0 right-0 m-3"
+                            style={{ borderRadius: "1rem" }}
+                            src={move}
+                            alt="UserUI"
+                        />
+                    </div>
+                </>
+            )}
             {/* <motion.div className="w-6">Hello World</motion.div> */}
             {/* {size.width >= 555 && scrollY.get() > 895 && (
                 <div
