@@ -1,13 +1,16 @@
 {
     "name": "tech-no-logic-gts",
     "homepage": "https://Tech-no-logic-GTS.github.io.",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "private": true,
     "dependencies": {
+        "@react-three/drei": "^8.6.3",
+        "@react-three/fiber": "^7.0.25",
         "@testing-library/jest-dom": "^5.15.0",
         "@testing-library/react": "^11.2.7",
         "@testing-library/user-event": "^12.8.3",
         "framer-motion": "^5.6.0",
+        "framer-motion-3d": "^6.2.1",
         "primeflex": "^3.1.2",
         "primeicons": "^5.0.0",
         "primereact": "^7.1.0",
@@ -21,6 +24,8 @@
         "react-svg-morph": "^0.2.1",
         "react-transition-group": "^4.4.1",
         "react-vertical-timeline-component": "^3.5.2",
+        "react-video-tag": "^0.0.10",
+        "three": "^0.136.0",
         "typed.js": "^2.0.12",
         "vanta": "^0.5.21",
         "web-vitals": "^1.1.2"

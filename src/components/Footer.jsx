@@ -9,6 +9,10 @@ const Footer = () => {
         <div className="flex justify-content-center">
             <div
                 className={`flex p-4 blur ${width <= 750 ? "w-full" : "w-11"}`}
+                style={{
+                    borderTopLeftRadius: "1.5rem",
+                    borderTopRightRadius: "1.5rem",
+                }}
             >
                 <div className="flex flex-column w-full">
                     <Link to="/">

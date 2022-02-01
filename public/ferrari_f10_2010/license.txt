@@ -1,0 +1,11 @@
+Model Information:
+* title:	Ferrari F10 2010
+* source:	https://sketchfab.com/3d-models/ferrari-f10-2010-f60c04f930ce4ea0aea9577a55852ef8
+* author:	TheoDev (https://sketchfab.com/TheoDevF1)
+
+Model License:
+* license type:	CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions can not be distributed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Ferrari F10 2010" (https://sketchfab.com/3d-models/ferrari-f10-2010-f60c04f930ce4ea0aea9577a55852ef8) by TheoDev (https://sketchfab.com/TheoDevF1) licensed under CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)

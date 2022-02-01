@@ -115,27 +115,30 @@ const NavBar = () => {
                                     onClick={() => setShowMenu(false)}
                                 >
                                     <div className="py-2 w-full">
-                                        <i className="pi pi-link text-2xl font-bold px-2" />
+                                        <i className="pi pi-link link text-2xl font-bold px-2 tranlate-icn" />
                                         Interact
                                     </div>
                                 </Link>
-                                <Link
+                                <a
                                     className="link"
-                                    to="Blogs"
+                                    href="https://gurukulblog.wixsite.com/website"
+                                    rel="noreferrer"
+                                    target="_blank"
                                     onClick={() => setShowMenu(false)}
                                 >
                                     <div className="py-2 w-full">
-                                        <i className="pi pi-link text-2xl font-bold px-2" />
+                                        <i className="pi pi-external-link text-2xl font-bold px-2 translate-icn" />
                                         Blogs
+                                        {/* <i className="pi pi-external-link blur text-2xl" /> */}
                                     </div>
-                                </Link>
+                                </a>
                                 <Link
                                     className="link"
                                     to="WeEvolve"
                                     onClick={() => setShowMenu(false)}
                                 >
                                     <div className="py-2 w-full">
-                                        <i className="pi pi-link text-2xl font-bold px-2" />
+                                        <i className="pi pi-link text-2xl font-bold px-2 tranlate-icn" />
                                         WeEvolve
                                     </div>
                                 </Link>
@@ -145,7 +148,7 @@ const NavBar = () => {
                                     onClick={() => setShowMenu(false)}
                                 >
                                     <div className="py-2 w-full">
-                                        <i className="pi pi-link text-2xl font-bold px-2" />
+                                        <i className="pi pi-link text-2xl font-bold px-2 tranlate-icn" />
                                         Stem
                                     </div>
                                 </Link>
@@ -155,7 +158,7 @@ const NavBar = () => {
                                     onClick={() => setShowMenu(false)}
                                 >
                                     <div className="py-2 w-full">
-                                        <i className="pi pi-link text-2xl font-bold px-2" />
+                                        <i className="pi pi-link text-2xl font-bold px-2 tranlate-icn" />
                                         About Us
                                     </div>
                                 </Link>

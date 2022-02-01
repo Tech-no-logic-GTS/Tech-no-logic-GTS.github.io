@@ -18,7 +18,9 @@ const StemHero = () => {
                     fallback={
                         <div className="relative w-screen h-screen"></div>
                     }
-                ></React.Suspense> */}
+                >
+                    
+                </React.Suspense> */}
                 <StemGlobeLazy />
             </div>
         </div>

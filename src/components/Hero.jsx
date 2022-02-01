@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import useWindowSize from "../hooks/windowSize";
-import blobSVG from "../assets/blob.svg";
+import blobSVG from "../assets/blob_1.svg";
 
 const Hero = () => {
     const width = useWindowSize().width;
